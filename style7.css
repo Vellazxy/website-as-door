@@ -1,0 +1,16 @@
+body{
+	perspective: 10vw;
+}
+
+
+.door{
+	width: 100vw;
+	height:99vh;
+	float: right;
+	background-color: black;
+	transition: 1s;
+}
+
+.door:hover{
+	transform: rotateY(5deg);
+}
