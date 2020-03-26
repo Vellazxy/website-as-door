@@ -7,10 +7,19 @@ body{
 	width: 100vw;
 	height:99vh;
 	float: right;
-	background-color: black;
+	background-color: #3D3D3D;
 	transition: 1s;
 }
 
 .door:hover{
 	transform: rotateY(5deg);
+}
+
+.nob{
+	width:2.5vw;
+	height:2.5vw;
+	border-radius: 50%;
+	background-color: lightgrey;
+	margin-left:95vw;
+	margin-top:43vh;
 }

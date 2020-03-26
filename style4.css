@@ -1,0 +1,381 @@
+body{
+	margin-left:6vw;
+	margin-right:6vw;
+	margin-top:5vh;
+}
+
+.grids{
+	display: grid;
+	grid-template-columns: 6vw 6vw 9vw 6vw 11vw 6vw 5vw 6vw 8vw 6vw 2vw 6vw 10vw;
+	grid-template-rows: repeat(10,5vw); 
+}
+
+.door1{
+	background-color: darkgrey;
+	grid-column-start:1; 
+	grid-column-end:2;
+	grid-row-start: 1;
+	grid-row-end:5;
+	animation: move 2.5s linear infinite;
+}
+
+.nob1{
+	width:0.5vw;
+	height:5vw;
+	border-radius: 10%;
+	background-color: lightgrey;
+	margin-left: 5vw;
+	margin-top:6vw;
+}
+
+.door1:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door2{
+	background-color: lightgrey;
+	grid-column-start:3; 
+	grid-column-end:4;
+	grid-row-start: 1;
+	grid-row-end:8;
+	animation: move2 2.5s linear infinite;
+}
+
+.nob2{
+	width:5vw;
+	height:0.7vw;
+	border-radius: 20%;
+	background-color: grey;
+	margin-left: 3.5vw;
+	margin-top:15vw;
+}
+
+.door2:hover{
+	animation: open2 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door3{
+	background-color: grey;
+	grid-column-start:5; 
+	grid-column-end:6;
+	grid-row-start: 1;
+	grid-row-end:5;
+	animation: move 2.5s linear infinite;
+}
+
+.nob3{
+	width:1.5vw;
+	height:1.5vw;
+	border-radius: 50%;
+	background-color: black;
+	margin-left: 8vw;
+	margin-top:9vw;
+}
+
+.door3:hover{
+	animation: open 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door4{
+	background-color: darkgrey;
+	grid-column-start:7; 
+	grid-column-end:8;
+	grid-row-start: 1;
+	grid-row-end:4;
+	animation: move2 2.5s linear infinite;
+}
+
+.nob4{
+	width:1vw;
+	height:1vw;
+	border-radius: 50%;
+	background-color: grey;
+	margin-left: 0.5vw;
+	margin-top:6vw;
+}
+
+.door4:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door5{
+	background-color: grey;
+	grid-column-start:9; 
+	grid-column-end:10;
+	grid-row-start: 1;
+	grid-row-end:4;
+	animation: move 2.5s linear infinite;
+}
+
+.nob5{
+	width:1.2vw;
+	height:1.2vw;
+	border-radius: 50%;
+	background-color: black;
+	margin-left: 6vw;
+	margin-top:6vw;
+}
+
+.door5:hover{
+	animation: open 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door6{
+	background-color: grey;
+	grid-column-start:11; 
+	grid-column-end:14;
+	grid-row-start: 1;
+	grid-row-end:8;
+	animation: move2 2.5s linear infinite;
+}
+
+.nob6{
+	width:1.2vw;
+	height:12vw;
+	border-radius: 10%;
+	background-color: lightgrey;
+	margin-left: 1.6vw;
+	margin-top:10vw;
+}
+
+.door6:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door7{
+	background-color: lightgrey;
+	grid-column-start:1; 
+	grid-column-end:2;
+	grid-row-start: 6;
+	grid-row-end:11;
+	animation: move3 2.5s linear infinite;
+}
+
+.nob7{
+	width:0.5vw;
+	height:13vw;
+	border-radius: 10%;
+	background-color: black;
+	margin-left: 4.7vw;
+	margin-top:6vw;
+}
+
+.door7:hover{
+	animation: open 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door8{
+	background-color: grey;
+	grid-column-start:3; 
+	grid-column-end:4;
+	grid-row-start: 9;
+	grid-row-end:11;
+	animation: move 2.5s linear infinite;
+}
+
+.nob8{
+	width:1.2vw;
+	height:1.2vw;
+	border-radius: 50%;
+	background-color: lightgrey;
+	margin-left: 0.6vw;
+	margin-top:4vw;
+}
+
+.door8:hover{
+	animation: open2 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door9{
+	background-color: darkgrey;
+	grid-column-start:5; 
+	grid-column-end:6;
+	grid-row-start: 6;
+	grid-row-end:11;
+	animation: move2 2.5s linear infinite;
+}
+
+.nob9{
+	width:1vw;
+	height:5vw;
+	border-radius: 20%;
+	background-color: lightgrey;
+	margin-left: 1vw;
+	margin-top:8vw;
+}
+
+.door9:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door10{
+	background-color: grey;
+	grid-column-start:7; 
+	grid-column-end:10;
+	grid-row-start: 5;
+	grid-row-end:9;
+	animation: move 2.5s linear infinite;
+}
+
+.nob10{
+	width:6vw;
+	height:1vw;
+	border-radius: 20%;
+	background-color: black;
+	margin-left: 11.5vw;
+	margin-top:9.5vw;
+}
+
+.door10:hover{
+	animation: open 1s linear;
+	transform-origin: 0% 0%;
+}
+
+/*.door11{
+	background-color: darkgrey;
+	grid-column-start:11; 
+	grid-column-end:12;
+	grid-row-start: 5;
+	grid-row-end:9;
+}*/
+
+.door12{
+	background-color: lightgrey;
+	grid-column-start:13; 
+	grid-column-end:15;
+	grid-row-start: 9;
+	grid-row-end:11;
+	animation: move3 2.5s linear infinite;
+}
+
+.nob12{
+	width:0.7vw;
+	height:5vw;
+	border-radius: 10%;
+	background-color: grey;
+	margin-left: 9vw;
+	margin-top:2.3vw;
+}
+
+.door12:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door13{
+	background-color: lightgrey;
+	grid-column-start:7; 
+	grid-column-end:9;
+	grid-row-start:10;
+	grid-row-end:11;
+	animation: move2 2.5s linear infinite;
+}
+
+.nob13{
+	width:1.2vw;
+	height:1.2vw;
+	border-radius: 50%;
+	background-color: white;
+	margin-left: 8.7vw;
+	margin-top:2vw;
+}
+
+.door13:hover{
+	animation: open1 1s linear;
+	transform-origin: 0% 0%;
+}
+
+.door14{
+	background-color: darkgrey;
+	grid-column-start:10; 
+	grid-column-end:12;
+	grid-row-start: 10;
+	grid-row-end:11;
+	animation: move 2.5s linear infinite;
+}
+
+.nob14{
+	width:1.2vw;
+	height:1.2vw;
+	border-radius: 50%;
+	background-color: black;
+	margin-left: 0.7vw;
+	margin-top:2vw;
+}
+
+.door14:hover{
+	animation: open 1s linear;
+	transform-origin: 0% 0%;
+}
+
+@keyframes open1{
+	0%{
+		transform: perspective(300px) rotateY(0deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(40deg);
+	}
+}
+
+@keyframes open{
+	0%{
+		transform: perspective(300px) rotateY(0deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(20deg);
+	}
+}
+
+@keyframes open2{
+	0%{
+		transform: perspective(300px) rotateY(0deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(60deg);
+	}
+}
+
+@keyframes move{
+	0%{
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(2vw);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
+
+@keyframes move2{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(2vh);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+@keyframes move3{
+	0%{
+		transform: translate(0);
+	}
+	50%{
+		transform: translate(-2vh);
+	}
+	100%{
+		transform: translate(0);
+	}
+}
