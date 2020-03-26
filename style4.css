@@ -52,7 +52,7 @@ body{
 }
 
 .door2:hover{
-	animation: open2 1s linear;
+	animation: open 1s linear;
 	transform-origin: 0% 0%;
 }
 
@@ -75,7 +75,7 @@ body{
 }
 
 .door3:hover{
-	animation: open 1s linear;
+	animation: open 2s linear;
 	transform-origin: 0% 0%;
 }
 
@@ -98,8 +98,8 @@ body{
 }
 
 .door4:hover{
-	animation: open1 1s linear;
-	transform-origin: 0% 0%;
+	animation: open_r 1s linear;
+	transform-origin: 100% 0%;
 }
 
 .door5{
@@ -144,8 +144,8 @@ body{
 }
 
 .door6:hover{
-	animation: open1 1s linear;
-	transform-origin: 0% 0%;
+	animation: open_r 1s linear;
+	transform-origin: 100% 0%;
 }
 
 .door7{
@@ -190,8 +190,8 @@ body{
 }
 
 .door8:hover{
-	animation: open2 1s linear;
-	transform-origin: 0% 0%;
+	animation: open_r 1s linear;
+	transform-origin: 100% 0%;
 }
 
 .door9{
@@ -213,8 +213,8 @@ body{
 }
 
 .door9:hover{
-	animation: open1 1s linear;
-	transform-origin: 0% 0%;
+	animation: open_r 1s linear;
+	transform-origin: 100% 0%;
 }
 
 .door10{
@@ -313,16 +313,19 @@ body{
 }
 
 .door14:hover{
-	animation: open 1s linear;
-	transform-origin: 0% 0%;
+	animation: open_r 1s linear;
+	transform-origin: 100% 0%;
 }
 
 @keyframes open1{
 	0%{
 		transform: perspective(300px) rotateY(0deg);
 	}
-	100%{
+	70%{
 		transform: perspective(300px) rotateY(40deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(0deg);
 	}
 }
 
@@ -330,8 +333,11 @@ body{
 	0%{
 		transform: perspective(300px) rotateY(0deg);
 	}
-	100%{
+	70%{
 		transform: perspective(300px) rotateY(20deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(0deg);
 	}
 }
 
@@ -339,8 +345,23 @@ body{
 	0%{
 		transform: perspective(300px) rotateY(0deg);
 	}
-	100%{
+	70%{
 		transform: perspective(300px) rotateY(60deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(0deg);
+	}
+}
+
+@keyframes open_r{
+	0%{
+		transform: perspective(300px) rotateY(0deg);
+	}
+	70%{
+		transform: perspective(300px) rotateY(-20deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(0deg);
 	}
 }
 
