@@ -1,0 +1,137 @@
+body{
+	margin-left:10vw;
+	margin-top:4vw;
+}
+
+@keyframes open{
+	from{
+		transform: perspective(300px) rotateY(0deg);
+	}
+	to{
+		transform: perspective(300px) rotateY(-60deg);
+	}
+}
+
+.grid{
+	display: grid;
+	grid-template-columns:7vw 2vw 7vw 55vw 7vw 5vw 5vw;
+	grid-template-rows:16vw 16vw 16vw;
+}
+
+.door1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	border: 0.4vw solid #5C5C5C;
+}
+
+.open{
+	position: absolute;
+	margin-top:-9.3vw;
+	width: 3.6vw; 
+	height: 12.6vw;
+	background-color: white;
+	/*border: 0.4vw solid #5C5C5C;*/
+	border-bottom: 3vw solid lightgrey;
+	border-left: 2.5vw solid #5C5C5C;
+	border-top: 0.2vw solid #5C5C5C;
+	border-right: 0.2vw solid #5C5C5C;
+	/*transform: perspective(400px) rotateY(-55deg);*/
+	display: none;
+}
+
+:target{
+	display: inline;
+	/*animation: open 1s linear;
+	animation-fill-mode:forwards;*/
+}
+
+.nob1{
+	width:0.4vw;
+	height:3.5vw;
+	background-color: #5C5C5C;
+	margin-left:5vw;
+	margin-top: 5.5vw;
+}
+
+.nob2{
+	width:0.4vw;
+	height:3.5vw;
+	background-color: #5C5C5C;
+	margin-left:5vw;
+	margin-top: 5.5vw;
+}
+
+.nob3{
+	width:0.4vw;
+	height:3.5vw;
+	background-color: #5C5C5C;
+	margin-left:5vw;
+	margin-top: 5.5vw;
+}
+
+.door2{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	border: 0.4vw solid #5C5C5C;
+}
+
+.wall1{
+	margin-top: -9vw;
+	margin-left: -0.1vw;
+	overflow: hidden;
+	display: none;
+}
+
+img{
+	width: auto;
+	height:15vw;
+	margin-left: -1vw;
+	transform: scale(1.05);
+}
+
+:target{
+	display: block;
+}
+
+.door3{
+	grid-column-start: 5;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	border: 0.4vw solid #5C5C5C;
+}
+
+.wall3{
+	margin-top: -9vw;
+	margin-left: -0.1vw;
+	overflow: hidden;
+	display: none;
+}
+
+:target{
+	display: block;
+}
+
+.exit{
+	grid-column-start: 7;
+	grid-column-end: 8;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: white;
+}
+
+.circle{
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.circle:hover{
+	background-color: grey;
+}
+

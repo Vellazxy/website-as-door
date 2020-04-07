@@ -1,0 +1,101 @@
+@keyframes move{
+	from{
+		left:0;
+	}
+	to{
+		left:30vw;
+	}
+}
+
+@keyframes move2{
+	from{
+		left:41;
+	}
+	to{
+		left:15vw;
+	}
+}
+
+.door1{
+	position: relative;
+	background-color: grey;
+	opacity: 0.4;
+	margin-left: 36.5vw;
+	margin-right: 8.5vw;
+	margin-top: 9vw;
+	width:27vw;
+	height:37vw;
+}
+
+.door1{
+	animation: 5s move 1s ease;
+	animation-fill-mode:forwards;
+}
+
+.nob1{
+	position: relative;
+	width:2vw;
+	height:2vw;
+	border-radius: 50%;
+	background-color: darkgrey;
+	top: 16vw;
+	left:1vw;
+}
+
+.door2{
+	position: absolute;
+	top:13vw;
+	left:41vw;
+	background-color: grey;
+	opacity: 0.6;
+	width:18vw;
+	height:28vw;
+}
+
+.nob2{
+	position: relative;
+	width:2vw;
+	height:2vw;
+	border-radius: 50%;
+	background-color: darkgrey;
+	top: 12vw;
+	left:14vw;
+}
+
+.door2{
+	animation: 5s move2 4s ease;
+	animation-fill-mode:forwards;
+}
+
+.door3{
+	position: absolute;
+	top:17vw;
+	left:45vw;
+	background-color: grey;
+	opacity: 0.9;
+	width:10vw;
+	height:20vw;
+}
+
+.nob3{
+	position: relative;
+	width:2vw;
+	height:2vw;
+	border-radius: 50%;
+	background-color: darkgrey;
+	top: 8vw;
+	left:1vw;
+}
+
+.circle{
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: white;
+	margin-top:4vw;
+	margin-left:93vw;
+}
+
+.circle:hover{
+	background-color: darkgrey;
+}

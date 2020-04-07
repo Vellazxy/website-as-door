@@ -1,0 +1,57 @@
+.door1{
+	position: relative;
+	width:99vw;
+	height:85vh;
+	background-color: grey;
+	clip-path:polygon(0 0, 100vw 0vw, 100vw 82vh, 57vw 63vh, 57vw 21vh, 45vw 23vh, 45vw 57vh, 0vw 38vh);
+}
+
+.nob1{
+	position: absolute;
+	border-radius: 50%;
+	width:1.5vw;
+	height: 1.5vw;
+	background-color: white;
+	border:0.3vw solid grey;
+	left:47vw;
+	top: 35vh;
+}
+
+.container1{
+	opacity: 0.4;
+}
+
+.container1:hover{
+	opacity: 1;
+}
+
+.door2{
+	position: relative;
+	margin-top: -47vh;
+	width:99vw;
+	height:90vh;
+	background-color: grey;
+	clip-path:polygon(0vw 0vh, 45vw 19vh, 62vw 7vh, 73vw 8vh, 57vw 25vh, 100vw 44vh, 100vw 65vh, 0vw 65vh);
+}
+
+.line{
+	position: absolute;
+	width:0.5vw;
+	height: 1vw;
+	/*background-color: #7D7D7D;*/
+	background-color: darkgrey;
+	transform: skew(-70deg);
+	left:60vw;
+	top: 50vh;
+	z-index: -1;
+}
+
+.container2{
+	opacity: 0.6;
+	z-index: -2;
+}
+
+.container2:hover{
+	opacity: 1;
+	z-index: -2;
+}

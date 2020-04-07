@@ -1,0 +1,134 @@
+body{
+	background-color: #5C5C5C;
+}
+
+/*.circle{
+	background-color: black;
+	width:1vw;
+	height:1vw;
+	border-radius: 50%;
+}
+*/
+.grid{
+	display: grid;
+	grid-template-columns: 30.3vw 50.3vw auto;
+	grid-template-rows: 35vw auto;
+}
+
+.wall1{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	height: 35vw;
+	width: 0;
+	border-left: 30vw solid darkgrey;
+	border-bottom: 15vw solid transparent;
+}
+
+.shadow1{
+	position: absolute;
+	margin-left: -30vw;
+	margin-top: 2vw;
+	filter: blur(20px);
+	height: 35vw;
+	width: 0;
+	border-left: 30vw solid  #454545;
+	border-bottom: 15vw solid transparent;
+	z-index: -1;
+}
+
+.wall2{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	height: 35vw;
+	width: 0vw;
+	border-right: 50vw solid darkgrey;
+	border-bottom: 15vw solid transparent;
+}
+
+.shadow2{
+	position: absolute;
+	height: 35vw;
+	width: 0vw;
+	margin-top: 2vw;
+	filter: blur(20px);
+	border-right: 50vw solid #454545;
+	border-bottom: 15vw solid transparent;
+	z-index: -1;
+}
+
+.entrance{
+	height: 15vw;
+	width: 4.7vw;
+	border-left:5vw solid #5C5C5C;
+	border-top:0.5vw solid #5C5C5C;
+	border-right:0.5vw solid #5C5C5C;
+	border-bottom: 5vw solid grey;
+	margin-top: -11vw;
+	background-color: lightgrey;
+	display: none;
+}
+
+:target{
+	display: block;
+}
+
+.frame{
+	margin-left:25vw;
+	margin-top:22vw;
+	height: 20vw;
+	width: 10vw;
+	border:0.5vw solid #5C5C5C;
+	transform: perspective(400px) rotateY(-32deg);
+}
+
+.nob{
+	width:0.7vw;
+	height: 5vw;
+	background-color: #5C5C5C;
+	margin-left: 8vw;
+	margin-top: 6vw;
+}
+
+.wall3{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	height: 35vw;
+	width: 0vw;
+	border-left: 18.3vw solid darkgrey;
+	border-bottom: 15vw solid transparent;
+}
+
+.shadow3{
+	position: absolute;
+	height: 35vw;
+	width: 0vw;
+	margin-top: 2vw;
+	margin-left: -19vw;
+	filter: blur(20px);
+	border-left: 18.3vw solid #454545;
+	border-bottom: 15vw solid transparent;
+	z-index: -1;
+}
+
+.exit{
+	margin-top: 15vw;
+	margin-left: 93vw;
+}
+
+.circle{
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: #5C5C5C ;
+	z-index: 2;
+}
+
+.circle:hover{
+	background-color: darkgrey;
+}

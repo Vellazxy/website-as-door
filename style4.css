@@ -62,7 +62,7 @@ body{
 	grid-column-end:6;
 	grid-row-start: 1;
 	grid-row-end:5;
-	animation: move 2.5s linear infinite;
+	/*animation: move 2.5s linear infinite;*/
 }
 
 .nob3{
@@ -73,11 +73,11 @@ body{
 	margin-left: 8vw;
 	margin-top:9vw;
 }
-
+/*
 .door3:hover{
 	animation: open 2s linear;
 	transform-origin: 0% 0%;
-}
+}*/
 
 .door4{
 	background-color: darkgrey;
@@ -399,4 +399,16 @@ body{
 	100%{
 		transform: translate(0);
 	}
+}
+
+.exit{
+	width: 2vw;
+	height: 2vw;
+	border-radius: 50%;
+	background-color: white;
+	margin-left:90vw;
+}
+
+.exit:hover{
+	background-color: darkgrey;
 }

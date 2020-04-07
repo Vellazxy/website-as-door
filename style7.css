@@ -1,0 +1,81 @@
+.black{
+	position: relative;
+	width:49vw;
+	height:98vh;
+	background-color: #3D3D3D;
+}
+
+.doorframe1{
+	position: absolute;
+	width:15vw;
+	height: 65vh;
+	border: 0.3vw solid darkgrey;
+	margin-top: -68vh;
+	margin-left: 17vw;
+}
+
+.doorframe2{
+	position: absolute;
+	width:15vw;
+	height: 65vh;
+	border: 0.3vw solid darkgrey;
+	margin-top: -98vh;
+	margin-left: 65vw;
+}
+
+.door1{
+	position: absolute;
+	width:15vw;
+	height: 65vh;
+	border: 0.3vw solid darkgrey;
+	background-color: #3D3D3D;
+	margin-top: -68vh;
+	margin-left: 17vw;
+}
+
+.nob1{
+	width:1vw;
+	height:1vw;
+	border-radius: 50%;
+	background-color: #3D3D3D;
+	border: 0.3vw solid darkgrey;
+	margin-top: 30vh;
+	margin-left: 12vw;
+}
+
+.door2{
+	position: absolute;
+	width:15vw;
+	height: 65vh;
+	border: 0.3vw solid darkgrey;
+	background-color: #3D3D3D;
+	margin-top: -98vh;
+	margin-left: 65vw;
+}
+
+.nob2{
+	width:1vw;
+	height:1vw;
+	border-radius: 50%;
+	background-color: #3D3D3D;
+	border: 0.3vw solid darkgrey;
+	margin-top: 30vh;
+	margin-left: 12vw;
+}
+
+.door1:hover{
+	transform-origin: 0% 0%;
+	animation: open 3s linear;
+}
+
+@keyframes open{
+	0%{
+		transform: perspective(300px) rotateY(0deg) skewY(0deg);
+	}
+	50%{
+		transform: perspective(300px) rotateY(30deg) skewY(7deg);
+	}
+	100%{
+		transform: perspective(300px) rotateY(0deg) skewY(0deg);
+	}
+}
