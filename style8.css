@@ -1,0 +1,61 @@
+body{
+	background-color: #3D3D3D;
+}
+
+.door1{
+	position: relative;
+	width:10vw;
+	height:20vw;
+	background-color: #3D3D3D;
+	border: 0.2vw solid lightgrey;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15vw;
+}
+
+.nob{
+	width:1.5vw;
+	height: 1.5vw;
+	border-radius: 50%;
+	background-color: white;
+	margin-top: 9vw;
+	margin-left: 1vw;
+}
+
+.door2{
+	position: absolute;
+	background-color: white;
+	width:99.5vw;
+	height: 98vh;
+	margin-top: -35.5vw;
+	margin-left:-0.3vw;
+	display: none;
+	transform-origin: 50% 0%;
+}
+
+.door2:target{
+	display: block;
+}
+
+.door2:hover{
+	animation: open 1s linear;
+	animation-fill-mode: forwards;
+}
+
+.nob2{
+	width:2.5vw;
+	height: 2.5vw;
+	border-radius: 50%;
+	background-color: #3D3D3D;
+	margin-top: 45vh;
+	margin-left:2vw;
+}
+
+@keyframes open{
+	from{
+		transform: perspective(400px) rotateY(0deg);
+	}
+	to{
+		transform: perspective(400px) rotateY(-5deg);
+	}
+}
