@@ -38,7 +38,7 @@ body{
 }
 
 .door2:hover{
-	animation: open 1s linear;
+	animation: 1s open 0.7s linear;
 	animation-fill-mode: forwards;
 }
 

@@ -28,23 +28,34 @@ body{
 
 .open{
 	position: absolute;
-	margin-top:-9.3vw;
-	width: 3.6vw; 
-	height: 12.6vw;
+	margin-top:-10.5vw;
+	margin-left:-1.3vw;
+	width:5vw;
+	height:17.5vw;
 	background-color: white;
-	/*border: 0.4vw solid #5C5C5C;*/
-	border-bottom: 3vw solid lightgrey;
-	border-left: 2.5vw solid #5C5C5C;
-	border-top: 0.2vw solid #5C5C5C;
-	border-right: 0.2vw solid #5C5C5C;
-	/*transform: perspective(400px) rotateY(-55deg);*/
+	border:0.4vw solid #5C5C5C;
 	display: none;
+	transform: perspective(300px) rotateY(-40deg) skewY(5deg);
 }
 
-:target{
-	display: inline;
-	/*animation: open 1s linear;
-	animation-fill-mode:forwards;*/
+.open:target{
+	display: block;
+}
+
+.cover{
+	background-color: white;
+	width:1vw;
+	height:5vw;
+	margin-left:6vw;
+	margin-top:5vw;
+}
+
+.nob11{
+	width:0.5vw;
+	height:3.5vw;
+	background-color: #5C5C5C;
+	margin-left:3.5vw;
+	margin-top:-4vw;
 }
 
 .nob1{
@@ -86,11 +97,12 @@ body{
 	display: none;
 }
 
-img{
-	width: auto;
-	height:15vw;
-	margin-left: -1vw;
-	transform: scale(1.05);
+.wall1{
+	background-color: white;
+	width:1vw;
+	height:5vw;
+	margin-left:5vw;
+	margin-top: -7vh;
 }
 
 :target{
@@ -110,6 +122,14 @@ img{
 	margin-left: -0.1vw;
 	overflow: hidden;
 	display: none;
+}
+
+.wall3{
+	background-color: white;
+	width:1vw;
+	height:5vw;
+	margin-left:5vw;
+	margin-top: -7vh;
 }
 
 :target{

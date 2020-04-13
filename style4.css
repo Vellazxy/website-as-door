@@ -73,11 +73,11 @@ body{
 	margin-left: 8vw;
 	margin-top:9vw;
 }
-/*
+
 .door3:hover{
 	animation: open 2s linear;
 	transform-origin: 0% 0%;
-}*/
+}
 
 .door4{
 	background-color: darkgrey;
